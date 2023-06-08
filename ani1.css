@@ -8,6 +8,11 @@
     box-sizing: border-box;
     padding: 0;
 }
+
+:root{
+  --x: 45deg ; 
+}
+
 /*setting the background*/
 body{
     display: flex;
@@ -37,7 +42,7 @@ a i{
 
 a i,
 a i:nth-child(2){
-    background: linear-gradient(45deg,#00ccff,#0e1538,#0e1538,#d400d4);
+    background: linear-gradient(var(--x),#00ccff,#0e1538,#0e1538,#d400d4);
 }
 
 a i:nth-child(2){
