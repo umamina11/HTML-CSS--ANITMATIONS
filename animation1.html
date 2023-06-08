@@ -12,5 +12,13 @@
         <span>Button</span>
     
 </a>
+<script>
+    let btn = document.querySelector('a');
+    btn.addEventListener('mousemover',e=>{
+        let rect =e.target.getBoundingClientRect();
+        let x =e.clientX - rect.left;
+        btn.style.setProperty('--x ')
+    })
+</script>
     </body>
 </html>
