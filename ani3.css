@@ -25,7 +25,7 @@ body {
     z-index: 1;
   }
   
-  .hills {
+  .water {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -35,25 +35,28 @@ body {
     z-index: 2;
     
   }
+  .stars{
+    transition: ease-in-out;
+    content:".";
+    background-color: white;
+    
+  }
   
   @keyframes sunrise {
     0% {
       top: 20%;
+
+    }
+    15%{
+      top:35%;
+      background-color:orangered;
     }
     50% {
       top: 50%;
+      background-color: red;
     }
     100% {
       top: 100%;
-    }
-  }
-  
-  @keyframes hills-move {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-50%);
     }
   }
   
